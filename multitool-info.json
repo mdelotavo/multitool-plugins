@@ -1,0 +1,7 @@
+{
+  "Homepage": "https://github.com/mdelotavo/multitool-plugins",
+  "Requires": "click",
+  "Maintainer": "Matthew Delotavo <matthew.t.delotavo@gmail.com>",
+  "Original-Maintainer": "Matthew Delotavo <matthew.t.delotavo@gmail.com>",
+  "Description-en": "Multitool click plugins examples"
+}
