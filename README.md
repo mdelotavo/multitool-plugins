@@ -23,20 +23,18 @@ Commands:
   plugins   Simple plugins manager for distributing commands.
 ```
 
-## Install the plugins in this repository
+## Install the commands in this repository
 ```
-multitool plugins configure -a
-echo -e '[sources]\npublic = https://github.com/mdelotavo/multitool-plugins.git' > ~/.multitool/plugins/config
+echo -e '[sources]\npublic = https://github.com/mdelotavo/multitool-plugins.git' >> ~/.multitool/plugins/config
 multitool plugins update
 multitool plugins show
 multitool plugins show -n public
 multitool plugins show -n public --show-commit-only
-# OUT: 1a1f847 - (HEAD -> main, origin/main, origin/HEAD) Add code examples (31 minutes ago) <Matthew Delotavo>
 multitool plugins show -n public --show-dependencies-only
-# OUT: click
+pip3 install $(multitool plugins show -n public --show-dependencies-only)
 ```
 
-## Check installed plugin commands
+## Check installed commands
 ```
 $ multitool examples -h
 Usage: multitool examples [OPTIONS] COMMAND [ARGS]...
