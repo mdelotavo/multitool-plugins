@@ -1,7 +1,7 @@
 plugins = []
 
-from .encrypt import encrypt
-plugins.append('encrypt')
+from .examples import examples
+plugins.append('examples')
 
 __all__ = []
 for plugin in plugins:
